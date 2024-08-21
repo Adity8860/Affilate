@@ -1,0 +1,105 @@
+.productdisplay h1{
+    text-align: center;
+    margin: 9vh 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    letter-spacing: 4px;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke: 4px #000;
+    -webkit-text-fill-color: #fff;
+}
+.product-item{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    filter: drop-shadow(0px 0px 1px #edecec); */
+       /* --bs-gutter-x: 1.5rem; */
+    /* --bs-gutter-y: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: calc(-1* var(--bs-gutter-y)); */
+    /* margin-right: calc(-.5* var(--bs-gutter-x)); */
+    /* margin-left: calc(-.5* var(--bs-gutter-x)); */
+    margin-left: 7em;
+    row-gap: 4em;
+}
+.product{
+    width: 16vw;
+    padding: 1em 0em;
+    margin: 1vh 5vh;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* min-width: 0; */
+    /* word-wrap: break-word; */
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    /* border: 2px solid rgba(1, 0, 0, 0.125); */
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottom a{
+    color: black;
+    font-size: 22px;
+
+}
+.product-details {
+    margin-top: 7em;
+    display: flex;
+
+}
+.product-image{
+    margin: 1em 10em;
+    padding: 26px 5em;
+}
+.product-image img{
+    height: 450px;
+}
+.product-inf{
+     
+    margin-top: -4em;
+    margin-right: 9em;
+}
+.product-details {
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    -webkit-text-stroke: 4px #cc2b41;
+}
+.para{
+    font-size: 17px;
+    word-spacing: 2px;
+    margin-top: -2em;
+}
+.para p{
+    font-size: 17px;
+}
+.title h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    letter-spacing: 4px;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: #fff;
+    text-align: start;
+}
+

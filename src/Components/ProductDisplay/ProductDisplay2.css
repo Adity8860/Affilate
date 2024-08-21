@@ -1,0 +1,103 @@
+@media (max-width: 552px) {
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+  }
+  .product {
+    width: 70vw;
+    padding: 1em 0;
+    margin: 0;
+  }
+  .title h1 {
+    padding: 39px;
+    font-size: 2rem !important;
+    font-weight: 800;
+    line-height: 4.3rem;
+    letter-spacing: 4px;
+    font-family: "Luckiest Guy", cursive;
+    -webkit-text-stroke: 3px #000;
+    -webkit-text-fill-color: #fff;
+    text-align: start;
+  }
+  .product-inf {
+    margin-top: 0em;
+    margin-right: 0em;
+  }
+
+  .product-details {
+    margin-top: 3em;
+    display: block !important;
+  }
+  .product-image {
+    margin: 0em 0em;
+    padding: 0px 0em;
+  }
+  .product-image img {
+    height: 290px;
+    margin: 1px 53px;
+  }
+  .product-inf {
+    margin-top: -4em;
+    margin-right: 0em;
+  }
+  .product-details {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  span {
+    -webkit-text-stroke: 4px #cc2b41;
+  }
+  .para {
+    font-size: 30px;
+    word-spacing: 1px;
+    margin-top: -2em;
+    margin: 2px 14px;
+  }
+  .para p {
+    font-size: 17px;
+    justify-items: auto-;
+  }
+  .productdisplay h1 {
+    font-size: 3rem !important;
+  }
+  .title h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    letter-spacing: 4px;
+    font-family: "Luckiest Guy", cursive;
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: #fff;
+    text-align: start;
+  }
+}
+@media (max-width: 1200px) {
+  .product {
+    max-width: 31vh !important;
+    width: 28vw !important;
+    /* gap: 5px; */
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 66px;
+  margin: auto;
+}
+.product-image img {
+    height: 334px;
+}
+.product-image {
+    margin: 3em 0em;
+    padding: 10px 7em;
+}
+.product-inf {
+  margin-top: -4em;
+  margin-right: 0em;
+}
+}

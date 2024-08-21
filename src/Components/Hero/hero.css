@@ -1,0 +1,27 @@
+.hero{
+    background-image: url("../Assets/banner.jpg");
+    height: 100%;
+    width: 101%;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+.carousel {
+    position: relative;
+    padding: 7em 6em;
+}
+.carousel-item{
+    cursor: pointer;
+}
+.carousel-inner{
+    border-radius: 3em;
+}
+/* @media (max-width: 390px){
+    .carousel-inner {
+        border-radius: 1em !important;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+} */
+

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    margin: -8px;
+    height: 14vh;
+    width: 101%;
+}
+.container-fluid img {
+    width: 15vw;
+    margin-left: 40px;
+
+}
+.container-fluid{
+    margin: 0 6vw !important;
+}
+.navbar-nav{
+    padding-left: 41vw !important;
+    font-size: 21px;
+    gap: 32px;
+    font-weight: 400;
+}
+.bg-color{
+    background: #2e2525 !important;
+}
+.navbar-nav li a{
+    text-decoration: none;
+    color: white;
+    
+}

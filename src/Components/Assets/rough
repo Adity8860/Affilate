@@ -1,0 +1,423 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    min-height: 750px;
+    background: url(../Assets/death_star.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+}
+.content {
+    height: 600px;
+    margin: auto;
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.bg-shape {
+    height: 100%;
+    background-image: linear-gradient(-45deg, #cc3843 0%, #cb193f 100%);
+    box-shadow: 0px 30px 139px 0px rgba(10, 22, 31, 0.26);
+    border-radius: 30px;
+    padding: 45px 40px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.bg-shape img {
+    object-fit: contain;
+    width: 268px;
+    display: block;
+    object-position: center;
+    opacity: -1;
+    transform: rotate(-90deg) translateY(-50%);
+    max-width: inherit;
+    left: 75px;
+    position: absolute;
+}
+.product-img {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    left: 25%;
+    transform: translateX(-45%);
+    max-height: 500px;
+    height: 100%;
+    pointer-events: none;
+}
+a {
+    text-decoration: none;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+.product-img__item img {
+    object-fit: contain;
+    object-position: center right;
+    height: 450px;
+}
+
+.product-img__item {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%) translateX(-130px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.product-img__item img {
+    object-fit: contain;
+    object-position: center right;
+    height: 450px;
+}
+.product-img__item.active {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    transition-delay: 0.3s;
+}
+.product-slider {
+    width: 75%;
+    height: 85%;
+    border-radius: 30px;
+    box-shadow: 0 28px 79px 0 rgba(10, 22, 31, 0.35);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-transition-property: -webkit-transform; */
+    /* transition-property: -webkit-transform; */
+    -o-transition-property: transform;
+    /* transition-property: transform; */
+    transition-property: transform, -webkit-transform;
+    /* -webkit-box-sizing: content-box; */
+    box-sizing: content-box;
+    transform: translate3d(0, 0, 0);
+    transition-duration: 0ms;
+
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    /* height: 1em; */
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.product-slider__card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+
+}
+.product-slider__cover {
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.product-slider__content {
+    color: #fff;
+    padding-top: 1px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-left: 250px;
+    padding-right: 80px;
+}
+.product-slider__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    /* opacity: 0; */
+    /* transform: translateY(55px); */
+    transition: all 0.5s;
+    color: #fff;
+}
+p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+.swiper-container-fade .swiper-slide {
+    pointer-events: none;
+    /* -webkit-transition-property: opacity; */
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.next, .prev {
+    z-index: 22;
+    display: inline-flex;
+    border: none;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.prev {
+    left: -30%;
+    transform: translate(-100%, -50%);
+}
+.product-slider__item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+body ul, body li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+.product-slider__item.swiper-slide-active .product-slider__content > *:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.product-slider__item.swiper-slide-active .product-slider__content > *:nth-child(1) {
+    transition-delay: 0s;
+}
+.product-slider__item.swiper-slide-active .product-slider__content > *:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.product-slider__item.swiper-slide-active .product-slider__content > *:nth-child(4) {
+    transition-delay: 0.6s;
+}
+img{
+    max-width:100%
+}
+.product-slider__wrp {
+    height: 100%;
+}
+.swiper-container-fade .swiper-slide-active, .swiper-container-fade .swiper-slide-active .swiper-slide-active {
+    pointer-events: auto;
+}
+.product-slider__item.swiper-slide-active .product-slider__content > * {
+    opacity: 1;
+    transform: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+.next {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+.prev {
+    left: -30%;
+    transform: translate(-100%, -50%);
+}
+button {
+    -webkit-appearance: button;
+}
+[role=button] {
+    cursor: pointer;
+}
+.next.disabled, .prev.disabled {
+    cursor: not-allowed;
+}
+
+
+/* Slider.jsx */
+
+
+
+      /* <div className="wrapper">
+        <div className="content">
+          <div className="bg-shape">
+            <img src={img} alt="" />
+          </div>
+          <div className="product-img">
+            <a href="https://www.amazon.in/Portable-Heater-Digital-Electric-Handy/dp/B0CPM3PV74?keywords=home&qid=1706264630&sbo=RZvfv//HxDF%2BO5021pAnSA%3D%3D&sr=8-14&linkCode=sl1&tag=apnikhudkiduk-21&linkId=a888f8b31bf163f5d928c716e6f0fdbb&language=en_IN&ref_=as_li_ss_tl">
+              <div className="product-img__item active" id="img1">
+                <img
+                  src={"https://m.media-amazon.com/images/I/41mLeP5TciL.jpg"}
+                  alt=""
+                  className="product-img__img"
+                />
+              </div>
+            </a>
+            <div className="product-img__item" id="img2">
+              <img
+                src={
+                  "https://m.media-amazon.com/images/I/511QQRzEXFL._SL1024_.jpg"
+                }
+                alt=""
+                className="product-img__img "
+              />
+            </div>
+          </div>
+          <div className="product-slider swiper-container-fade swiper-container-horizontal">
+            <button
+              className="prev"
+              tabIndex="0"
+              role="button"
+              aria-label="Previous slide"
+              aria-disabled="false"
+            >
+              <span className="icon">
+                <svg className="icon icon-arrow-right">
+                <use xlinkHref="#icon-arrow-left"></use>
+                </svg>
+              </span>
+            </button>
+            <button
+              className="next swiper-button-disabled disabled "
+              tabIndex="0"
+              role="button"
+              aria-label="Next slide"
+              aria-disabled="true"
+            >
+              <span className="icon">
+                <svg className="icon icon-arrow-right">
+                  <use xlinkHref="#icon-arrow-right"></use>
+                </svg>
+              </span>
+            </button>
+            <div className="product-slider__wrp swiper-wrapper">
+              <div
+                className="product-slider__item swiper-slide swiper-slide-active"
+                data-target="img1"
+                style={{
+                  width: " 788px",
+                  opacity: "1",
+                  transform: "translate3d(0px, 0px, 0px)",
+                  transitionDuration: " 0ms",
+                }}
+              >
+                <div className="product-slider__card">
+                  <img
+                    className="product-slider__cover"
+                    src={"https://apnikhudkidukan.com/images/item-1-bg.webp"}
+                    alt=""
+                  />
+                  <div className="product-slider__content">
+                    <h1 className="product-slider__title">
+                      GRSHUB Portable Room Heater For Home
+                    </h1>
+                    <h6>Definition:</h6>
+                    <p>
+                      Portable Heater: Our Electric Portable Heater is Portable.
+                      you can use it in rooms and you can easily carry in your
+                      trips. Always use the product with 16A plug. Using it on
+                      lower rating sockets may result in melting of socket or
+                      the plug.
+                    </p>
+                    <ul>
+                      <li>
+                        This GRSHUB Handy Heater features a digital temperature
+                        display where you can adjust to your ideal temperature.
+                        It also features a programmable 12 hour- timmer.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="product-slider__item swiper-slide swiper-slide-next"
+                data-target="img2"
+                style={{
+                  width: "788px",
+                  opacity: "0",
+                  transform: "translate3d(-788px, 0, 0)",
+                  transitionDuration:"0"
+                }}
+              >
+                <div className="product-slider__card">
+                  <img
+                    src={"https://apnikhudkidukan.com/images/item-2-bg.webp"}
+                    alt=""
+                    className="product-slider__cover"
+                  />
+                  <div className="product-slider__content">
+                    <h1>GoHome Polyester Single Electric Blanket</h1>
+                    <h6>Description</h6>
+                    <p>
+                      The Comfort Control Electric Blanket by GoHome helps you
+                      to take complete control of your comfort and warmth. You
+                      will no longer need to get into a cold bed, let Comfort
+                      Control do the work for you. Featuring two heat settings
+                      that you can adjust to set the temperature so it is right
+                      for you, made from 100% polyester, the under blanket is
+                      durable but soft, providing ultimate comfort. You can use
+                      Comfort Control to warm your bed before use.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span
+              className="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" className="hidden" hidden >
+        <symbol id="icon-arrow-left" viewBox="0 0 448 512">
+          <path id="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>
+        </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 448 512">
+        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+        </symbol>
+      </svg> */

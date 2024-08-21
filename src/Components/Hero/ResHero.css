@@ -1,0 +1,9 @@
+@media (max-width: 552px){
+    .carousel-inner {
+        border-radius: 1em !important;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+

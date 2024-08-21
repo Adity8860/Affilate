@@ -1,0 +1,42 @@
+.slick-slider {
+    position: relative;
+    display: block;
+    /* background-color: rgb(58, 57, 57); */
+    background-image: url("../Assets/death_star.jpg");
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 2em 4em;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+/* .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+.slick-next {
+    right: 116px !important;
+}
+.slick-prev {
+    left: 157px !important;
+    z-index: 1;
+}
+.slick-list {
+    border: none;
+    border-radius: 12px;
+    width: 86% ;
+    position: relative !important;
+    display: block !important;
+    overflow: hidden !important;
+    left: 133px ;
+    padding: 31px !important;
+    background-color: #eb1a1a;
+}
+
